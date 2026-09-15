@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Calcuverse! An all-in-one web dashboard featuring instant converters"
+    />
+    <title>Calcuverse</title>
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+    <div class="dashboard-container">
+     
+
+      <aside class="sidebar">
+        <div class="sidebar-container">
+          <img class="favicon" src="images/favicon.png" alt="Calcuverse Logo" />
+          <h2 class="title">Calcuverse</h2>
+        </div>
+        <div class="sidebar-nav">
+          <button class="nav-btn active" data-target="home">Home</button>
+          <button class="nav-btn" data-target="standard-scientific">
+            Standard & Scientific
+          </button>
+          <button class="nav-btn" data-target="converters">Converters</button>
+          <button class="nav-btn" data-target="finance">Finance</button>
+          <button class="nav-btn" data-target="health-utility">
+            Health & Utility
+          </button>
+          <button class="nav-btn" data-target="applied-physics">
+            Applied Physics
+          </button>
+          <button class="nav-btn" data-target="metrics-shapes">
+            Metrics & Shapes
+          </button>
+
+          <button class="nav-btn" data-target="developer-tools">
+            Developer Tools
+          </button>
+          <button class="nav-btn" data-target="credentials-security">
+            Credentials & Security
+          </button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="content-section active" data-content="home">
+          <div class="home-content">
+            <div class="tag-container">
+              <img src="images/main-tag.png" alt="Main Tag" />
+            </div>
+            <h1>Precision Tools for Every Calculation</h1>
+            <p>
+              Pick a category from the sidebar to explore calculators and
+              utilities
+            </p>
+          </div>
+        </div>
+
+        <div class="content-section" data-content="standard-scientific">
+          <div class="section-header">
+            <h2>Standard & Scientific</h2>
+          </div>
+          <div class="cards-container">
+            <div class="calc-card">
+              <h3>Standard Calculator</h3>
+              <p>
+                Perform everyday arithmetic operations with absolute numeric
+                reliability.
+              </p>
+              <button class="action-btn" data-calc="standard">
+                Open Module ➔
+              </button>
+            </div>
+            <div class="calc-card">
+              <h3>Scientific Calculator</h3>
+              <p>
+                Execute advanced trigonometric, logarithmic and exponential
+                calculations seamlessly.
+              </p>
+              <button class="action-btn" data-calc="scientific">
+                Open Module ➔
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section" data-content="standard-calculator">
+          <div class="container standard-calc-container">
+            <section class="calculator-screen">
+              <input type="text" id="std-screen" readonly />
+            </section>
+            <section class="buttons standard-buttons">
+              <button data-value="1">1</button>
+              <button data-value="2">2</button>
+              <button data-value="3">3</button>
+              <button data-value="/">/</button>
+              <button data-value="4">4</button>
+              <button data-value="5">5</button>
+              <button data-value="6">6</button>
+              <button data-value="+">+</button>
+              <button data-value="7">7</button>
+              <button data-value="8">8</button>
+              <button data-value="9">9</button>
+              <button data-value="-">-</button>
+              <button data-value="0">0</button>
+              <button data-value=".">.</button>
+              <button data-action="calculate" class="equal-btn">=</button>
+              <button data-value="*">*</button>
+              <button data-action="clear" class="ac-btn">AC</button>
+            </section>
+          </div>
+          <button class="action-btn" data-back="standard-scientific">
+            ← Back
+          </button>
+        </div>
+
+        <div class="content-section" data-content="scientific-calculator">
+          <div class="container">
+            <section class="calculator-screen">
+              <input type="text" id="sci-screen" readonly />
+            </section>
+            <section class="buttons">
+              <button data-action="ln">ln</button>
+              <button data-value="(">(</button>
+              <button data-value=")">)</button>
+              <button data-value=".">.</button>
+              <button data-value="+">+</button>
+              <button data-action="dc" class="dc-btn">DC</button>
+              <button data-action="clear" class="ac-btn">AC</button>
+              <button data-action="log">log</button>
+              <button data-action="√">√x</button>
+              <button data-action="sin" class="tri-btn">sin</button>
+              <button data-value="3.14159">π</button>
+              <button data-value="7">7</button>
+              <button data-value="8">8</button>
+              <button data-value="9">9</button>
+              <button data-value="/">/</button>
+              <button data-action="∛">∛x</button>
+              <button data-value="**2">x<sup>2</sup></button>
+              <button data-action="cos" class="tri-btn">cos</button>
+              <button data-value="2.71828">e</button>
+              <button data-value="4">4</button>
+              <button data-value="5">5</button>
+              <button data-value="6">6</button>
+              <button data-value="*">*</button>
+              <button data-value="**2">x<sup>2</sup></button>
+              <button data-value="00">00</button>
+              <button data-action="tan" class="tri-btn">tan</button>
+              <button data-action="!">x!</button>
+              <button data-value="1">1</button>
+              <button data-value="2">2</button>
+              <button data-value="3">3</button>
+              <button data-value="-">-</button>
+              <button data-value="**3">x<sup>3</sup></button>
+              <button data-value="1/">1/x</button>
+              <button data-value="2.71828**">e<sup>x</sup></button>
+              <button data-value="%">%</button>
+              <button data-value="**">x<sup>x</sup></button>
+              <button data-value="0">0</button>
+              <button data-action="calculate" class="equal-btn">=</button>
+            </section>
+          </div>
+          <button class="action-btn" data-back="standard-scientific">
+            ← Back
+          </button>
+        </div>
+
+        <div class="content-section" data-content="converters">
+          <div class="section-header">
+            <h2>Converters</h2>
+          </div>
+          <div class="cards-container">
+            <div class="calc-card">
+              <h3>Temperature Converter</h3>
+              <p>
+                Convert temperatures instantly between Celsius and Fahrenheit.
+              </p>
+              <button class="action-btn" data-calc="temperature">
+                Open Module ➔
+              </button>
+            </div>
+            <!-- Speed Converter Card (Yeh yahan cards-container ke andar aana chahiye) -->
+            <div class="calc-card">
+              <h3>Speed Converter</h3>
+              <p>
+                Easily convert speed back and forth between Km/h and Mph units
+              </p>
+              <button class="action-btn" data-calc="speed">
+                Open Module ➔
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section" data-content="temperature-calculator">
+          <div class="temp-container">
+            <div class="content">
+              <div class="temp-input-container">
+                <input
+                  type="number"
+                  class="temp-input"
+                  placeholder="Enter value..."
+                />
+              </div>
+              <div class="temp-btn-container">
+                <button class="action-btn c-to-f-btn">°C to °F</button>
+                <button class="action-btn f-to-c-btn">°F to °C</button>
+              </div>
+              <section class="temp-screen">
+                <input
+                  type="text"
+                  class="temp-screen"
+                  readonly
+                  placeholder="Result..."
+                />
+              </section>
+            </div>
+          </div>
+          <button class="action-btn temp-back-btn" data-back="converters">
+            ← Back
+          </button>
+        </div>
+        <div class="content-section" data-content="speed-calculator">
+          <div class="speed-container">
+            <div class="content">
+              <div class="speed-input-container">
+                <input
+                  type="number"
+                  class="speed-input"
+                  placeholder="Enter value..."
+                />
+              </div>
+              <div class="speed-btn-container">
+                <button class="action-btn kmh-to-mph-btn">Km/h to Mph</button>
+                <button class="action-btn mph-to-kmh-btn">Mph to Km/h</button>
+              </div>
+              <section class="speed-screen">
+                <input
+                  type="text"
+                  class="speed-screen"
+                  readonly
+                  placeholder="Result..."
+                />
+              </section>
+            </div>
+          </div>
+          <button class="action-btn speed-back-btn" data-back="converters">
+            ← Back
+          </button>
+        </div>
+        <!--finace card-->
+        <div class="content-section" data-content="finance">
+          <div class="section-header">
+            <h2>Finance</h2>
+          </div>
+          <div class="cards-container">
+            <div class="calc-card">
+              <h3>Bill Splitter</h3>
+              <p>
+                Split bills and calculate per-person shares accurately across
+                groups.
+              </p>
+              <button class="action-btn" data-calc="bill-splitter">
+                Open Module ➔
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- iinterface view of bill-->
+        <div class="content-section" data-content="bill-splitter-calculator">
+          <div class="bill-container">
+            <div class="content">
+              <div class="bill-input-container">
+                <input
+                  type="number"
+                  class="bill-input"
+                  placeholder="Total Bill..."
+                />
+                <input
+                  type="number"
+                  class="people-input"
+                  placeholder="People count..."
+                />
+              </div>
+              <div class="bill-btn-container">
+                <button class="action-btn split-btn">Calculate Split</button>
+              </div>
+              <section class="bill-screen">
+                <input
+                  type="text"
+                  class="bill-screen-input"
+                  readonly
+                  placeholder="Result per person..."
+                />
+              </section>
+              
+            </div>
+          </div>
+          <button class="action-btn bill-back-btn" data-back="finance">
+            ← Back
+          </button>
+
+        </div>
+
+        <!-- card for health bmi-->
+        <div class="content-section" data-content="health-utility">
+          <div class="section-header">
+            <h2>Health & Utility</h2>
+          </div>
+          <div class="cards-container">
+            <div class="calc-card">
+              <h3>BMI Calculator</h3>
+              <p>
+                Calculate your Body Mass Index and check your health category
+                instantly.
+              </p>
+              <button class="action-btn" data-calc="bmi">Open Module ➔</button>
+            </div>
+            <div class="calc-card">
+              <h3>Water Intake Calculator</h3>
+              <p>
+                Calculate your recommended daily water consumption based on body
+                weight.
+              </p>
+              <button class="action-btn" data-calc="water-intake">
+                Open Module ➔
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--bmi interface-->
+        <div class="content-section" data-content="bmi-calculator">
+          <div class="bmi-container">
+            <div class="content">
+              <div class="bmi-input-container">
+                <input
+                  type="number"
+                  class="weight-input"
+                  placeholder="Weight (kg)..."
+                />
+                <input
+                  type="number"
+                  class="height-input"
+                  placeholder="Height (m)..."
+                />
+              </div>
+              <div class="bmi-btn-container">
+                <button class="action-btn bmi-btn">Calculate BMI</button>
+              </div>
+              <section class="bmi-screen">
+                <input
+                  type="text"
+                  class="bmi-screen-input"
+                  readonly
+                  placeholder="Result..."
+                />
+              </section>
+            </div>
+          </div>
+          <button class="action-btn bmi-back-btn" data-back="health-utility">
+            ← Back
+          </button>
+        </div>
+        <!--water intake interface-->
+        <div class="content-section" data-content="water-intake-calculator">
+          <div class="water-container">
+            <div class="content">
+              <div class="water-input-container">
+                <input
+                  type="number"
+                  class="water-weight-input"
+                  placeholder="Weight (kg)..."
+                />
+              </div>
+              <div class="water-btn-container">
+                <button class="action-btn water-btn">
+                  Calculate Water Intake
+                </button>
+              </div>
+              <section class="water-screen">
+                <input
+                  type="text"
+                  class="water-screen-input"
+                  readonly
+                  placeholder="Result..."
+                />
+              </section>
+            </div>
+          </div>
+          <button class="action-btn water-back-btn" data-back="health-utility">
+            ← Back
+          </button>
+        </div>
+        <!--applied phy cards-->
+        <div class="content-section" data-content="applied-physics">
+          <div class="section-header">
+            <h2>Applied Physics</h2>
+          </div>
+          <div class="cards-container">
+            <div class="calc-card">
+              <h3>Velocity Calculator</h3>
+              <p>
+                Calculate final or average velocity based on displacement and
+                time interval.
+              </p>
+              <button class="action-btn" data-calc="velocity">
+                Open Module ➔
+              </button>
+            </div>
+            <div class="calc-card">
+              <h3>Acceleration Calculator</h3>
+              <p>
+                Determine object acceleration rate using change in velocity over
+                time.
+              </p>
+              <button class="action-btn" data-calc="acceleration">
+                Open Module ➔
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--interface velocity-->
+        <div class="content-section" data-content="velocity-calculator">
+          <div class="velocity-container">
+            <div class="content">
+              <div class="velocity-input-container">
+                <input
+                  type="number"
+                  class="velocity-dist-input"
+                  placeholder="Displacement (m)..."
+                />
+                <input
+                  type="number"
+                  class="velocity-time-input"
+                  placeholder="Time (s)..."
+                />
+              </div>
+              <div class="velocity-btn-container">
+                <button class="action-btn velocity-btn">
+                  Calculate Velocity
+                </button>
+              </div>
+              <section class="velocity-screen">
+                <input
+                  type="text"
+                  class="velocity-screen-input"
+                  readonly
+                  placeholder="Result..."
+                />
+              </section>
+            </div>
+          </div>
+          <button
+            class="action-btn velocity-back-btn"
+            data-back="applied-physics"
+          >
+            ← Back
+          </button>
+        </div>
+        <!--acceleration interface-->
+        <div class="content-section" data-content="acceleration-calculator">
+          <div class="accel-container">
+            <div class="content">
+              <div class="accel-input-container">
+                <input
+                  type="number"
+                  class="accel-vi-input"
+                  placeholder="Initial Velocity (m/s)..."
+                />
+                <input
+                  type="number"
+                  class="accel-vf-input"
+                  placeholder="Final Velocity (m/s)..."
+                />
+                <input
+                  type="number"
+                  class="accel-time-input"
+                  placeholder="Time (s)..."
+                />
+              </div>
+              <div class="accel-btn-container">
+                <button class="action-btn accel-btn">
+                  Calculate Acceleration
+                </button>
+              </div>
+              <section class="accel-screen">
+                <input
+                  type="text"
+                  class="accel-screen-input"
+                  readonly
+                  placeholder="Result..."
+                />
+              </section>
+            </div>
+          </div>
+          <button class="action-btn accel-back-btn" data-back="applied-physics">
+            ← Back
+          </button>
+        </div>
+        <!-- shapes-->
+
+        <div class="content-section" data-content="metrics-shapes">
+          <div class="section-header">
+            <h2>Metrics & Shapes</h2>
+          </div>
+          <div class="cards-container">
+            <div class="calc-card">
+              <h3>Circle Area</h3>
+              <p>
+                Calculate the area and circumference of a circle using its
+                radius.
+              </p>
+              <button class="action-btn" data-calc="circle-area">
+                Open Module ➔
+              </button>
+            </div>
+
+            <div class="calc-card">
+              <h3>Triangle Area</h3>
+              <p>
+                Determine the surface area of a triangle using its base and
+                height dimensions.
+              </p>
+              <button class="action-btn" data-calc="triangle-area">
+                Open Module ➔
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--circle interce-->
+        <div class="content-section" data-content="circle-area">
+          <div class="circle-container">
+            <div class="content">
+              <div class="circle-input-container">
+                <input
+                  type="number"
+                  class="circle-radius-input"
+                  placeholder="Radius (r)..."
+                />
+              </div>
+              <div class="circle-btn-container">
+                <button class="action-btn circle-btn">Calculate Area</button>
+              </div>
+              <section class="circle-screen">
+                <input
+                  type="text"
+                  class="circle-screen-input"
+                  readonly
+                  placeholder="Result..."
+                />
+              </section>
+            </div>
+          </div>
+          <button class="action-btn circle-back-btn" data-back="metrics-shapes">
+            ← Back
+          </button>
+        </div>
+        <!-- triablebase-->
+        <div class="content-section" data-content="triangle-area">
+          <div class="triangle-container">
+            <div class="content">
+              <div class="triangle-input-container">
+                <input
+                  type="number"
+                  class="triangle-base-input"
+                  placeholder="Base (b)..."
+                />
+                <input
+                  type="number"
+                  class="triangle-height-input"
+                  placeholder="Height (h)..."
+                />
+              </div>
+              <div class="triangle-btn-container">
+                <button class="action-btn triangle-btn">Calculate Area</button>
+              </div>
+              <section class="triangle-screen">
+                <input
+                  type="text"
+                  class="triangle-screen-input"
+                  readonly
+                  placeholder="Result..."
+                />
+              </section>
+            </div>
+          </div>
+          <button
+            class="action-btn triangle-back-btn"
+            data-back="metrics-shapes"
+          >
+            ← Back
+          </button>
+        </div>
+        <!--text case convertor-->
+
+        <div class="content-section" data-content="developer-tools">
+          <div class="section-header">
+            <h2>Developer Tools</h2>
+          </div>
+          <div class="cards-container">
+            <div class="calc-card">
+              <h3>Text Case Converter</h3>
+              <p>
+                Convert any text instantly between uppercase, lowercase, and
+                title case formats.
+              </p>
+              <button class="action-btn" data-calc="text-case-converter">
+                Open Module ➔
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--interface-->
+        <div class="content-section" data-content="text-case-converter">
+          <div class="text-case-container">
+            <div class="content">
+              <div class="text-case-input-container">
+                <textarea
+                  class="text-input"
+                  placeholder="Enter text here..."
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="text-case-btn-container">
+                <button class="action-btn uppercase-btn">Upper case</button>
+                <button class="action-btn lowercase-btn">lower case</button>
+              </div>
+              <section class="text-case-screen">
+                <textarea
+                  class="text-screen-input"
+                  readonly
+                  placeholder="Result..."
+                  rows="3"
+                ></textarea>
+              </section>
+            </div>
+          </div>
+          <button
+            class="action-btn text-case-back-btn"
+            data-back="developer-tools"
+          >
+            ← Back
+          </button>
+        </div>
+
+        <div class="content-section" data-content="credentials-security">
+          <div class="section-header">
+            <h2>Credentials & Security</h2>
+          </div>
+          <div class="cards-container">
+            <div class="calc-card">
+              <h3>Password Strength Checker</h3>
+              <p>
+               Instantly evaluates your password's strength and overall security level.
+              </p>
+              <button class="action-btn" data-calc="password-checker">
+                Open Module ➔
+              </button>
+            </div>
+            <div class="calc-card">
+              <h3>Base64 Encoder</h3>
+              <p>Convert plain text into secure Base64 encoded format.</p>
+              <button class="action-btn" data-calc="base64-encoder">
+                Open Module ➔
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--intrface 1-->
+        <div class="content-section" data-content="password-checker">
+          <div class="password-container">
+            <div class="content">
+              <div class="password-input-container">
+                <input
+                  type="password"
+                  class="password-input"
+                  placeholder="Enter password..."
+                />
+              </div>
+              <section class="password-screen">
+                <input
+                  type="text"
+                  class="password-screen-input"
+                  readonly
+                  placeholder="Strength..."
+                />
+              </section>
+            </div>
+          </div>
+          <button
+            class="action-btn password-back-btn"
+            data-back="credentials-security"
+          >
+            ← Back
+          </button>
+        </div>
+        <div class="content-section" data-content="base64-encoder">
+          <div class="encoder-container">
+            <div class="content">
+              <div class="encoder-input-container">
+                <input
+                  type="text"
+                  class="encoder-input"
+                  placeholder="Enter text to encode..."
+                />
+              </div>
+              <div class="encoder-btn-container">
+                <button class="action-btn encode-btn">Encode</button>
+              </div>
+              <section class="encoder-screen">
+                <input
+                  type="text"
+                  class="encoder-screen-input"
+                  readonly
+                  placeholder="Result..."
+                />
+              </section>
+            </div>
+          </div>
+          <button
+            class="action-btn encoder-back-btn"
+            data-back="credentials-security"
+          >
+            ← Back
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
